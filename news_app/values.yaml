@@ -6,7 +6,7 @@ dockercfg: ${artifact.source.dockerconfig}
 
 createImagePullSecret: true
 
-createNamespace: true
+createNamespace: false
 namespace: ${infra.kubernetes.namespace}
 customname: ${env.name}-${artifact.buildNo}
 
