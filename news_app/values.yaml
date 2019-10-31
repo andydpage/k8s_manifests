@@ -1,5 +1,5 @@
-name: main-poc
-replicas: 4
+name: harness-andy
+replicas: 1
 
 image: ${artifact.metadata.image}
 dockercfg: ${artifact.source.dockerconfig}
@@ -8,7 +8,6 @@ createImagePullSecret: true
 
 createNamespace: false
 namespace: ${infra.kubernetes.namespace}
-customname: ${env.name}-${artifact.buildNo}
 
 # Service Type allow you to specify what kind of service you want.
 # Possible values for ServiceType are:
